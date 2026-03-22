@@ -86,7 +86,7 @@ const ContactSection = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <p className="text-xs text-muted-foreground text-center">
-                  Sem spam. Respondemos em até 24h úteis.
+                  Sem spam. Respondemos em até 24h.
                 </p>
               </form>
             ) : (
@@ -97,7 +97,7 @@ const ContactSection = () => {
                 </div>
                 <h3 className="text-2xl font-black text-foreground">Solicitação recebida!</h3>
                 <p className="text-muted-foreground">
-                  Obrigado, <span className="text-foreground font-medium">{form.name}</span>. Nossa equipe técnica entrará em contato pelo email <span className="text-cyan-400">{form.email}</span> em até 24h úteis.
+                  Obrigado, <span className="text-foreground font-medium">{form.name}</span>. Nossa equipe técnica entrará em contato pelo email <span className="text-cyan-400">{form.email}</span> em até 24h.
                 </p>
               </div>
             )}
