@@ -39,18 +39,18 @@ const ProblemSolutionSection = () => {
               </div>
 
               <h3 className="text-2xl md:text-3xl font-black text-foreground mb-4 leading-tight">
-                O Inimigo Metálico
+                Custos Ocultos e Vulnerabilidade
               </h3>
               <p className="text-muted-foreground leading-relaxed text-base mb-8">
-                A maresia causa <span className="text-red-400 font-semibold">corrosão galvânica e pites no aço e alumínio</span>, gerando vazamento de eletrólitos e falhas críticas em sistemas de energia embarcada.
+                Indústrias portuárias e de energia sofrem com a <span className="text-red-400 font-semibold">rápida degradação de equipamentos devido à maresia e variações térmicas</span>, gerando paradas não programadas e alto custo de reposição.
               </p>
 
               <div className="space-y-3">
                 {[
-                  "Corrosão galvânica progressiva",
-                  "Vazamento de eletrólitos",
-                  "Falha estrutural da carcaça",
-                  "Alto custo de manutenção",
+                  "Alto custo de manutenção anual de equipamentos",
+                  "Erosão acelerada por névoa salina (maresia)",
+                  "Risco de segurança no transporte tradicional de Lítio",
+                  "Falhas operacionais devido ao calor excessivo",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3 text-sm text-muted-foreground">
                     <div className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0" />
@@ -87,18 +87,18 @@ const ProblemSolutionSection = () => {
               </div>
 
               <h3 className="text-2xl md:text-3xl font-black text-foreground mb-4 leading-tight">
-                A Evolução em Polímero
+                Polímero de Alta Resistência
               </h3>
               <p className="text-muted-foreground leading-relaxed text-base mb-8">
-                Substituímos o metal por <span className="text-cyan-400 font-semibold">compostos aeroespaciais de alta performance</span>. Sem reação com o sal. Sem corrosão. Desempenho máximo em qualquer ambiente marítimo.
+                Nossa tecnologia exclusiva de <span className="text-cyan-400 font-semibold">baterias com revestimento polimérico</span> anula a reação ao sal e suporta temperaturas extremas, garantindo operação contínua e segura.
               </p>
 
               <div className="space-y-3">
                 {[
-                  "Imunidade total à corrosão galvânica",
-                  "Invólucro de polímero aeroespacial",
-                  "15% de redução de peso total",
-                  "Vida útil 3x maior que metal",
+                  "Revestimento com imunidade total à erosão da maresia",
+                  "Polímero avançado com maior resistência ao calor",
+                  "Design estrutural focado na segurança de transporte",
+                  "Redução drástica do custo de manutenção anual",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3 text-sm text-foreground">
                     <div className="w-1.5 h-1.5 rounded-full bg-cyan-400 flex-shrink-0" />

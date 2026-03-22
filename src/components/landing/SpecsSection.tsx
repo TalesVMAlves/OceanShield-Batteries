@@ -7,53 +7,55 @@ import {
 } from "@/components/ui/accordion";
 import { CheckCircle2 } from "lucide-react";
 
+// 1. Substitua os 'specs' detalhados
 const specs = [
   {
     id: "salt-spray",
-    title: "Teste de Névoa Salina (ASTM B117)",
+    title: "Engenharia de Materiais Antierosão",
     content:
-      "A carcaça OceanShield foi submetida a 2.000 horas contínuas de névoa salina a 5% NaCl, 35°C. Resultado: zero pitting, zero delaminação, zero variação na resistência de isolamento (mantida acima de 500 MΩ). Carcaças de alumínio 5083 falharam com formação de pites após 240h.",
-    badge: "2.000h · Zero Degradação",
+      "A matriz polimérica selecionada para a carcaça possui propriedades inerentes de resistência a cloretos. O projeto estrutural foi desenvolvido com a meta de superar os testes de névoa salina (ASTM B117) tradicionais, eliminando o risco de pitting (corrosão alveolar) comum em gabinetes de alumínio naval.",
+    badge: "Imunidade Projetada",
   },
   {
     id: "chemistry",
-    title: "Química LYP — Lítio-Ítrio-Fosfato",
+    title: "Química de Alta Estabilidade Térmica",
     content:
-      "A dopagem com Ítrio na estrutura olivina do fosfato de lítio reduz a resistência interna em ~18% comparada ao LiFePO4 convencional. Isso se traduz em menor geração de calor, maior eficiência coulômbica (>99,2%) e estabilidade de capacidade superior a 3.500 ciclos a 80% DoD.",
-    badge: ">3.500 Ciclos · 80% DoD",
+      "Baseando-se em células de Lítio avançadas, o sistema é arquitetado para manter uma eficiência térmica superior. A integração do invólucro polimérico com a gestão de calor interna visa garantir uma operação segura mesmo em ambientes com altas temperaturas (comuns em painéis expostos ao sol em portos e plataformas).",
+    badge: "Segurança Térmica",
   },
   {
     id: "polymer",
-    title: "Material da Carcaça — GFRP Aeroespacial",
+    title: "Invólucro de Grau Industrial",
     content:
-      "A carcaça é fabricada em Glass Fiber Reinforced Polymer (GFRP) grau aeronáutico, com matriz de resina epóxi de alta temperatura. Resistência à tração: 180 MPa. Módulo de elasticidade: 12 GPa. Temperatura de serviço: -40°C a +85°C. Norma de referência: EN 2598 (aeroespacial).",
-    badge: "180 MPa · -40°C a +85°C",
+      "Substituímos os metais pesados por polímeros compostos de alta performance estrutural. Os materiais base do nosso invólucro são capazes de suportar altas tensões mecânicas e choques térmicos extremos sem delaminação, mantendo a integridade das células internas.",
+    badge: "Alta Resistência Mecânica",
   },
   {
     id: "weight",
-    title: "Redução de Peso — Análise Comparativa",
+    title: "Otimização de Peso e Logística",
     content:
-      "Sistema de 100Ah: Carcaça de aço inox 316L = 4,2 kg. Carcaça de alumínio 5083 = 2,8 kg. Carcaça OceanShield GFRP = 2,38 kg. Redução de 15,0% vs. alumínio e 43% vs. aço. Em embarcações de grande porte com múltiplos bancos de bateria, isso representa centenas de quilos de economia de peso abaixo da linha d'água.",
-    badge: "15% vs. Alumínio · 43% vs. Aço",
+      "Com a substituição do aço e do alumínio estrutural por compostos polimétricos leves, projetamos uma redução drástica no peso final do banco de baterias. Isso facilita não apenas a instalação em campo (muitas vezes reduzindo a necessidade de maquinário pesado de içamento), mas otimiza os custos e a segurança do transporte logístico.",
+    badge: "Design Ultra-Leve",
   },
   {
     id: "certifications",
-    title: "Certificações e Normas Aplicadas",
+    title: "Roadmap de Certificações (Compliance)",
     content:
-      "EN IEC 62619 (segurança de baterias secundárias de lítio). IEC 60068-2-11 (névoa salina). ISO 9227. DNV GL Rule for Batteries (homologação embarcada). ATEX Zone 2 (em desenvolvimento para Q4 2025).",
-    badge: "DNV GL · IEC 62619",
+      "Nossos equipamentos estão sendo projetados do zero para atender e exceder os requisitos das principais normas da indústria: EN IEC 62619 (segurança de baterias), testes de névoa salina (ISO 9227) e adequações futuras para atmosferas explosivas (Zone 2).",
+    badge: "Arquitetura Normatizada",
   },
 ];
 
+// 2. Substitua os Highlights (Deixe apenas características conceituais e operacionais, sem cravar números sensíveis)
 const highlights = [
-  { label: "Tensão Nominal", value: "25,6 V (8S)" },
-  { label: "Capacidade", value: "50–400 Ah" },
-  { label: "Ciclos de Vida", value: "> 3.500 @ 80% DoD" },
-  { label: "Temperatura de Operação", value: "-20°C a +65°C" },
-  { label: "Grau de Proteção", value: "IP67 nativo" },
-  { label: "Peso (100Ah / 25,6V)", value: "12,4 kg" },
-  { label: "Comunicação", value: "CAN Bus · RS485 · BT" },
-  { label: "BMS Integrado", value: "Ativo, multi-estágio" },
+  { label: "Tecnologia Base", value: "Lítio de Alta Performance" },
+  { label: "Material da Carcaça", value: "Polímero Composto" },
+  { label: "Resistência à Maresia", value: "Imunidade Total" },
+  { label: "Foco Térmico", value: "Alta Dissipação" },
+  { label: "Grau de Proteção Alvo", value: "IP67 / IP65" },
+  { label: "Vantagem de Peso", value: "Mais leve que Aço/Alumínio" },
+  { label: "Integração", value: "Compatível com BMS Padrão" },
+  { label: "Manutenção", value: "Design de Baixa Intervenção" },
 ];
 
 const SpecsSection = () => {
@@ -65,15 +67,16 @@ const SpecsSection = () => {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-24 bg-gradient-to-b from-transparent via-border to-transparent" />
 
       <div className="container">
+        {/* 3. Atualize o cabeçalho para focar no PROJETO */}
         <div
           className={`text-center mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          <p className="text-sm font-semibold tracking-widest uppercase text-cyan-400 mb-3">Dados Técnicos</p>
+          <p className="text-sm font-semibold tracking-widest uppercase text-cyan-400 mb-3">Parâmetros de Projeto</p>
           <h2 className="text-4xl md:text-5xl font-black text-foreground">
-            Especificações <span className="gradient-text">Técnicas</span>
+            Metas de <span className="gradient-text">Engenharia</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-            Transparência total para engenheiros e integradores de sistemas.
+            Nossa arquitetura foi desenhada desde o primeiro dia para resolver os gargalos térmicos e corrosivos da infraestrutura pesada.
           </p>
         </div>
 

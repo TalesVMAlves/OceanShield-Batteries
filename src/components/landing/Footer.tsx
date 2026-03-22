@@ -1,4 +1,5 @@
 import { Twitter, Linkedin, Youtube, Mail } from "lucide-react";
+import logoMarca from "@/assets/logo.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -7,12 +8,9 @@ const Footer = () => {
     <footer className="border-t border-border/40 py-12">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
-          {/* Brand */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg gradient-btn flex items-center justify-center">
-                <span className="text-xs font-black text-navy">OS</span>
-              </div>
+              <img src={logoMarca} alt="Logótipo OceanShield" className="h-10 w-auto" />
               <span className="font-bold text-lg text-foreground">OceanShield Batteries</span>
             </div>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">

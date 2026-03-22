@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import batteryHero from "@/assets/battery-hero.png";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import logoMarca from "@/assets/logo.png";
 
 const useInView = (options = {}) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -49,9 +50,7 @@ const HeroSection = () => {
       {/* Navbar */}
       <nav className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-6 md:px-16 py-6">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg gradient-btn flex items-center justify-center">
-            <span className="text-xs font-black text-primary-foreground">OS</span>
-          </div>
+          <img src={logoMarca} alt="Logótipo OceanShield" className="h-10 w-auto" />
           <span className="font-bold text-lg tracking-tight text-foreground">OceanShield</span>
           <span className="font-light text-lg text-muted-foreground">Batteries</span>
         </div>
@@ -78,7 +77,7 @@ const HeroSection = () => {
           <div className={`space-y-8 transition-all duration-700 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass border border-cyan-500/30 text-xs font-medium text-cyan-400">
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-              Tecnologia LYP · Polímero Aeroespacial
+              Inovação B2B · Setor Portuário e Energia
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight">
@@ -87,7 +86,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
-              Conheça a <span className="text-foreground font-semibold">OceanShield Batteries</span>: As primeiras baterias LYP com invólucro de polímero aeroespacial. <span className="text-cyan-400">100% imunes à maresia</span>, 15% mais leves, projetadas para durar.
+              Soluções de armazenamento de energia em Lítio de alta performance para o setor de óleo e gás, portos e indústrias. Nossa inovação em polímero garante <span className="text-cyan-400">resistência máxima à maresia e ao calor</span>, reduzindo drasticamente seus custos de manutenção.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -112,9 +111,9 @@ const HeroSection = () => {
             {/* Stats Row */}
             <div className="flex flex-wrap gap-8 pt-4 border-t border-border/40">
               {[
-                { value: "100%", label: "Imune à Maresia" },
-                { value: "15%", label: "Mais Leve" },
-                { value: "3x", label: "Vida Útil Maior" },
+                { value: "↓ Custos", label: "Menor Manutenção Anual" },
+                { value: "Máxima", label: "Resistência Térmica e Maresia" },
+                { value: "100%", label: "Segurança no Transporte" },
               ].map((stat) => (
                 <div key={stat.label}>
                   <div className="text-2xl font-black gradient-text">{stat.value}</div>

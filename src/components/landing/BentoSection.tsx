@@ -1,47 +1,47 @@
 import { useInView } from "./HeroSection";
-import { Shield, Feather, Zap, FlaskConical } from "lucide-react";
+import { Shield, Thermometer, Truck, Wrench } from "lucide-react";
 
 const bentoItems = [
   {
     id: "zero-corrosion",
     icon: Shield,
-    tag: "Zero Comprometimento",
-    title: "Imunidade Zero-Corrosão",
+    tag: "Durabilidade Extrema",
+    title: "Resistência Superior à Maresia",
     description:
-      "O invólucro de polímero aeroespacial não reage com cloretos, sulfatos ou qualquer componente da maresia. Testado em névoa salina contínua por 2.000h sem degradação.",
+      "Desenvolvido especificamente para o setor portuário e offshore. Nosso revestimento polimérico inovador não sofre erosão ou degradação química em ambientes com alta concentração de névoa salina.",
     accent: "cyan",
     colSpan: "md:col-span-2",
     large: true,
   },
   {
-    id: "lightweight",
-    icon: Feather,
-    tag: "Engenharia de Peso",
-    title: "15% Mais Leve",
+    id: "heat-resistance",
+    icon: Thermometer,
+    tag: "Estabilidade",
+    title: "Alta Resistência ao Calor",
     description:
-      "A densidade do polímero composto é 30% menor que a do alumínio naval, com rigidez estrutural equivalente.",
+      "Estrutura polimérica projetada para dissipar calor eficientemente, mantendo a integridade da bateria mesmo nas condições térmicas mais severas do setor de energia.",
     accent: "teal",
     colSpan: "md:col-span-1",
     large: false,
   },
   {
-    id: "lyp-tech",
-    icon: Zap,
-    tag: "Química Avançada",
-    title: "Tecnologia LYP de Alta Performance",
+    id: "transport-safety",
+    icon: Truck,
+    tag: "Logística Segura",
+    title: "Segurança no Transporte",
     description:
-      "Lítio-Ítrio-Fosfato: maior densidade energética, ciclos de carga profunda superiores e estabilidade térmica excepcional.",
+      "Superamos os desafios logísticos do Lítio. O invólucro absorve impactos e estabiliza a química interna, garantindo transporte rodoviário e marítimo 100% seguro para grandes volumes.",
     accent: "cyan",
     colSpan: "md:col-span-1",
     large: false,
   },
   {
-    id: "materials",
-    icon: FlaskConical,
-    tag: "Para Engenheiros",
-    title: "Inovação de Materiais",
+    id: "business-model",
+    icon: Wrench,
+    tag: "Parceria Estratégica",
+    title: "Fornecimento e Manutenção",
     description:
-      "Aplicamos o Princípio de Composição TRIZ: a matriz polimérica combina fibras de vidro aeronáuticas com resinas de alta temperatura, atingindo resistência à tração de 180 MPa e temperatura de serviço de -40°C a +85°C.",
+      "Atendemos médias e grandes empresas (CNPJ) com venda direta dimensionada para sua planta. Além do produto, oferecemos contratos de manutenção preventiva e corretiva para garantir o máximo desempenho e vida útil superior dos equipamentos.",
     accent: "teal",
     colSpan: "md:col-span-2",
     large: false,
