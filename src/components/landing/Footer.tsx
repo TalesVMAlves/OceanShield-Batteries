@@ -1,8 +1,28 @@
-import { Twitter, Linkedin, Youtube, Mail } from "lucide-react";
+import { Instagram, Linkedin, Youtube, Mail } from "lucide-react";
+import { Tiktok } from "../ui/tiktok";
 import logoMarca from "@/assets/logo.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
+
+const socialLinks = [
+  { 
+    Icon: Instagram, 
+    url: "https://www.instagram.com/oceanshieldbattery" 
+  },
+  { 
+    Icon: Tiktok, 
+    url: "https://www.tiktok.com/@oceanshield01?is_from_webapp=1&sender_device=pc" 
+  },
+  { 
+    Icon: Youtube, 
+    url: "https://www.youtube.com/channel/UCHCAEibU0Hv6tfUM1KB64MA" 
+  },
+  { 
+    Icon: Mail, 
+    url: "mailto:oceanshieldbatery@gmail.com" 
+  }
+];
 
   return (
     <footer className="border-t border-border/40 py-12">
@@ -17,10 +37,12 @@ const Footer = () => {
               Sistemas de energia LYP com invólucro aeroespacial para ambientes marinhos extremos.
             </p>
             <div className="flex items-center gap-3">
-              {[Twitter, Linkedin, Youtube, Mail].map((Icon, i) => (
+              {socialLinks.map(({ Icon, url }, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={url}
+                  target={url.startsWith('mailto') ? "_self" : "_blank"}
+                  rel={url.startsWith('mailto') ? "" : "noopener noreferrer"}
                   className="w-9 h-9 rounded-lg border border-border/50 hover:border-cyan-500/50 flex items-center justify-center text-muted-foreground hover:text-cyan-400 transition-all duration-200 hover:bg-cyan-500/5"
                 >
                   <Icon className="h-4 w-4" />
